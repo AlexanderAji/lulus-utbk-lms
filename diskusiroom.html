@@ -29,6 +29,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .comment-avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      </style>
 </head>
 
 <body>
@@ -109,73 +118,185 @@
 
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded p-3">
-                    <span class="input-group-text">
-                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 60px; height: 60px; margin: 3%;">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea " placeholder="Tulis disini"></textarea>
-                            <div class="d-grid d-md-flex ">
-                                <a href="#" class="btn btn-primary btn-lg  " style="margin: 8%;"><i class="fa fa-paper-plane " ></i></a>
+                    <div class="mb-2 d-flex ">
+                        <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                        <div>
+                        <strong>Pengguna 1</strong>
+                        <small class="text-muted"  >13 November 2023</small>
+                        <p>Siswa</p>
+                        <h6>Mengapa Katak Melompat? </h6>
+                        </div>
+                    </div>
+                    <hr>
+              
+                    <!-- Komentar -->
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Komentar
+                                </button>
+                             </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="mb-2 d-flex ">
+                                        <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                        <div>
+                                        <strong>Pengguna 2</strong>
+                                        <small class="text-muted" >13 November 2023</small>
+                                        <p>Siswa</p>
+                                        <p>Bisa merangkak kok, ga cuma melompat</p>
+                                        </div>
+                                    </div>
+                                    <!-- Komentar Kedua -->
+                                    <hr>
+                                    <div class="mb-2 d-flex ">
+                                        <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                        <div>
+                                        <strong>Pengguna 3</strong>
+                                        <small class="text-muted">13 November 2023</small>
+                                        <p>Siswa</p>
+                                        <p>Kemarin aku liat katak bisa berjalan kok</p>
+                                        </div>
+                                    </div>
+                                    <!-- kosongan -->
+                                    <!-- Form Komentar Baru -->
+                                    <form>
+                                        <div class="mb-3">
+                                        <label for="komentar">Komentar:</label>
+                                        <textarea class="form-control" id="todo-komentar" name="komentar" rows="3" required></textarea>
+                                        </div>
+                                        <button class="btn btn-primary" id="btn-kirim">Kirim Komentar</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </span>
+                    </div>
                 </div>
             </div>
 
+            <!-- topik 2 -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded p-3">
-                    <span class="input-group-text">
-                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px; margin: 1%; ">
-                        <div class="row col-1">
-                            <div class="col"><h6>Alexander Aji</h6></div>
-                            <div class="col">23 Oktober 2023</div>
+                    <div class="mb-2 d-flex ">
+                        <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                        <div>
+                        <strong>Pengguna 1</strong>
+                        <small class="text-muted"  >13 November 2023</small>
+                        <p>Siswa</p>
+                        <h6>Mengapa Kucing Mengeong? </h6>
                         </div>
-                    </span>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere adipisci perferendis consequuntur officiis cumque accusantium, eius ullam totam quis fuga beatae eligendi commodi numquam laborum natus qui et temporibus?</p>
                     </div>
-                    <span class="input-group-text">
-                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 60px; height: 60px; margin: 3%;">
-                        <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea " placeholder="Tulis disini"></textarea>
-                            <div class="d-grid d-md-flex ">
-                                <a href="#" class="btn btn-primary btn-lg  " style="margin: 8%;"><i class="fa fa-paper-plane " ></i></a>
+                    <hr>
+              
+                    <!-- Komentar -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Komentar
+                            </button>
+                            </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="mb-2 d-flex ">
+                                    <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                    <div>
+                                    <strong>Pengguna 2</strong>
+                                    <small class="text-muted" >13 November 2023</small>
+                                    <p>Siswa</p>
+                                    <p>Kemarin aku liat kucing diem</p>
+                                    </div>
+                                </div>
+                                <!-- Komentar Kedua -->
+                                <hr>
+                                <div class="mb-2 d-flex ">
+                                    <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                    <div>
+                                    <strong>Pengguna 3</strong>
+                                    <small class="text-muted">13 November 2023</small>
+                                    <p>Siswa</p>
+                                    <p>Kucing bisa tidurk</p>
+                                    </div>
+                                </div>
+                                <!-- kosongan -->
+                                <!-- Form Komentar Baru -->
+                                <form>
+                                    <div class="mb-3">
+                                    <label for="komentar">Komentar:</label>
+                                    <textarea class="form-control" id="todo-komentar" name="komentar" rows="3" required></textarea>
+                                    </div>
+                                    <button class="btn btn-primary" id="btn-kirim">Kirim Komentar</button>
+                                </form>
                             </div>
                         </div>
-                    </span>
-                </div>
-            </div>
-            <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
                     </div>
                 </div>
             </div>
-            <!-- Blank End -->
-
-
-            <!-- Footer Start -->
+            <!-- topik 3 -->
             <div class="container-fluid pt-4 px-4">
-                <div class="bg-light rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                <div class="bg-light rounded p-3">
+                    <div class="mb-2 d-flex ">
+                        <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                        <div>
+                        <strong>Pengguna 1</strong>
+                        <small class="text-muted"  >13 November 2023</small>
+                        <p>Siswa</p>
+                        <h6>Mengapa Babi hidungnya 2? </h6>
                         </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                    <hr>
+              
+                    <!-- Komentar -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Komentar
+                            </button>
+                            </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="mb-2 d-flex ">
+                                    <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                    <div>
+                                    <strong>Pengguna 2</strong>
+                                    <small class="text-muted" >13 November 2023</small>
+                                    <p>Siswa</p>
+                                    <p>Hidungnya 1</p>
+                                    </div>
+                                </div>
+                                <!-- Komentar Kedua -->
+                                <hr>
+                                <div class="mb-2 d-flex ">
+                                    <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                    <div>
+                                    <strong>Pengguna 3</strong>
+                                    <small class="text-muted">13 November 2023</small>
+                                    <p>Siswa</p>
+                                    <p>Hidung 1 lubang 2</p>
+                                    </div>
+                                </div>
+                                <!-- kosongan -->
+                                <!-- Form Komentar Baru -->
+                                <form>
+                                    <div class="mb-3">
+                                    <label for="komentar">Komentar:</label>
+                                    <textarea class="form-control" id="todo-komentar" name="komentar" rows="3" required></textarea>
+                                    </div>
+                                    <button class="btn btn-primary" id="btn-kirim">Kirim Komentar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer End -->
         </div>
+        
         <!-- Content End -->
 
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -190,6 +311,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        let todoKomentar = document.getElementById('todo-komentar');
+        let btnKirim = document.getElementById('btn-kirim');
+        btnKirim.addEventListener('click',function () {
+            if (todoKomentar.value == ''){
+                alert('Tidak boleh kosong !!');
+            } else {
+                let todoContainer = document.querySelector('.kosongan')
+
+                let todoHtml = todoContainer.innerHTML;
+
+                todoHtml += `
+                <img src="img/user.jpg" alt="Avatar Pengguna" class="comment-avatar">
+                                    <div>
+                                    <strong>Namamu</strong>
+                                    <small class="text-muted">13 November 2023</small>
+                                    <p>Siswa</p>
+                                    <div>
+                                        <span>${todoKomentar.value}</span>
+                                    </div>
+                                    <p>Kemarin aku liat katak bisa berjalan kok</p>
+                                    </div>
+                `;
+            }
+        })
+    </script>
 </body>
 
 </html>
