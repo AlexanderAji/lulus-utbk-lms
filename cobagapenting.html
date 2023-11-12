@@ -163,72 +163,116 @@
 
 
             <!-- Blank Start -->
+
+            <!-- <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded p-3">
+                    <div class="col-md-12 ">
+                        <form id="newcomment-form">
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Komentar:</label>
+                                <textarea class="form-control" id="newcomment" rows="2" required></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="margin-bottom: 2%;" onclick="addComment()">Tambah Komentar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded p-3">
+                    <div id="comments-container"> -->
+
+
+
+                        <!-- Komentar akan ditampilkan di sini -->
+
+
+                    <!-- </div>
+                </div>
+            </div> -->
+
             <div class="container-fluid pt-4 px-4">
                 <h1>Forum Diskusi</h1>
-                <div id="container">
-                    <div class="mb-3 p-3 border border-secondary rounded">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
-                                <img src="img/user.jpg" alt="Avatar" class="avatar-img">
-                                <h5>Rudi</h5>
-                            </div>
-                            <p>November 10, 2023</p>
-                        </div>
-                        <p>Coba-coba boleh lah Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusantium aliquid officiis perspiciatis sequi ad natus ipsa commodi maiores nisi quam corporis, unde, cupiditate explicabo, facilis suscipit totam dolorum neque!</p>
-                    </div>
-                    <!-- Komentar akan ditampilkan di sini -->
-                </div>
-                
-                <div id="comments-container">
-                    <!-- Komentar akan ditampilkan di sini -->
-                </div>
+            </div>
 
-                <form id="comment-form">
+
+            <div class="container mt-5">
+                <form id="description-form">
                     <div class="mb-3">
-                        <label for="comment" class="form-label">Komentar:</label>
-                        <textarea class="form-control" id="comment" rows="3" required></textarea>
+                        <label for="description" class="form-label">Tanyakan disini !</label>
+                        <textarea class="form-control" id="description" rows="5" placeholder="Tulis deskripsi disini..." required></textarea>
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="addComment()">Tambah Komentar</button>
+                    <button type="button" class="btn btn-primary" onclick="postDescription()">Post Deskripsi</button>
                 </form>
-            </div>
-
-
-
-            
-            
-            
-            <!-- <form id="comment-form">
-        <div class="mb-3">
-            <label for="comment" class="form-label">Komentar:</label>
-            <textarea class="form-control" id="comment" rows="3" required></textarea>
-        </div>
-        <button type="button" class="btn btn-primary" onclick="addComment()">Tambah Komentar</button>
-    </form>
-</div> -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row vh-100 bg-light rounded align-items-center justify-content-center mx-0">
-                    <div class="col-md-6 text-center">
-                        <h3>This is blank page</h3>
-                    </div>
+                <div id="description-container" class="mt-4">
+                    <!-- Deskripsi akan ditampilkan di sini -->
                 </div>
             </div>
+
+
+
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded p-3">
+                    <div class="mb-2 d-flex ">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <!-- <img src="img/user.jpg" alt="Avatar Pengguna" class="avatar-img"> -->
+                        <div>
+                        <strong>Pengguna 1</strong>
+                        <small class="text-muted"  >13 November 2023</small>
+                        <p>Siswa</p>
+                        <h6>Mengapa Katak Melompat? </h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalToggleLabel">Komentar</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="container">
+                                <div class="mb-3 p-3 border border-secondary rounded">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/user.jpg" alt="Avatar" class="avatar-img">
+                                            <h5>Rudi</h5>
+                                        </div>
+                                        <p>November 10, 2023</p>
+                                    </div>
+                                    <p>Coba-coba boleh lah Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus accusantium aliquid officiis perspiciatis sequi ad natus ipsa commodi maiores nisi quam corporis, unde, cupiditate explicabo, facilis suscipit totam dolorum neque!</p>
+                                </div>
+                                
+                                <div id="comments-container">
+                                    <!-- Komentar akan ditampilkan di sini -->
+                                </div>
+                                
+                                <form id="comment-form">
+                                    <div class="mb-3">
+                                        <label for="comment" class="form-label">Komentar:</label>
+                                        <textarea class="form-control" id="comment" rows="3" required></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" style="margin-bottom: 2%;" onclick="addComment()">Tambah Komentar</button>
+                                </form>
+                            </div>
+        
+        
+        
+        
+                          </div>
+                        </div>
+                      </div>
+                      <a class="btn btn-info" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Komentar</a>
+                </div>
+            </div>
+
+
+            
+
             <!-- Blank End -->
 
 
             <!-- Footer Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="bg-light rounded-top p-4">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- Footer End -->
         </div>
         <!-- Content End -->
@@ -272,7 +316,8 @@ function addComment() {
         comments.push(comment);
         displayComments();
         clearForm();
-    } else {
+    } 
+    else {
         alert('Harap isi kolom komentar!');
     }
 }
@@ -336,6 +381,84 @@ document.addEventListener('DOMContentLoaded', displayComments);
 
 
     </script>
+
+<script>
+    // Fungsi untuk memposting deskripsi
+function postDescription() {
+    const descriptionText = document.getElementById('description').value;
+
+    if (descriptionText) {
+        const description = {
+            username: 'Alex',
+            descriptionText: descriptionText,
+            date: new Date(),
+            avatar: 'img/user.jpg', // Ganti dengan path yang sesuai
+            button: 'komentar'
+        };
+
+        displayDescription(description);
+        clearForm();
+    } else {
+        alert('Harap isi kolom deskripsi!');
+    }
+}
+
+// Fungsi untuk menampilkan deskripsi
+function displayDescription(description) {
+    const descriptionContainer = document.getElementById('description-container');
+    
+    const descriptionDiv = document.createElement('div');
+    descriptionDiv.classList.add('mb-3', 'p-3', 'border', 'border-secondary', 'rounded', 'bg-light');
+
+    const userHeader = document.createElement('div');
+    userHeader.classList.add('d-flex', 'justify-content-between', 'align-items-center');
+
+    const userInfo = document.createElement('div');
+    userInfo.classList.add('d-flex', 'align-items-center');
+
+    const avatarImg = document.createElement('img');
+    avatarImg.src = description.avatar;
+    avatarImg.alt = 'Avatar';
+    avatarImg.classList.add('avatar-img');
+
+    const usernameElement = document.createElement('h5');
+    usernameElement.textContent = description.username;
+
+    const dateElement = document.createElement('p');
+    dateElement.textContent = formatDate(description.date);
+
+    const descriptionTextElement = document.createElement('p');
+    descriptionTextElement.textContent = description.descriptionText;
+
+    const buttonComment = document.createElement('button');
+    buttonComment.classList.add('btn-primary', 'd-flex', 'align-items-center', 'p-3', 'mt-3','mb-0');
+
+    descriptionTextElement.appendChild(buttonComment);
+    
+    userInfo.appendChild(avatarImg);
+    userInfo.appendChild(usernameElement);
+
+    userHeader.appendChild(userInfo);
+    userHeader.appendChild(dateElement);
+
+    descriptionDiv.appendChild(userHeader);
+    descriptionDiv.appendChild(descriptionTextElement);
+
+    descriptionContainer.appendChild(descriptionDiv);
+}
+
+// Fungsi untuk membersihkan formulir setelah memposting deskripsi
+function clearForm() {
+    document.getElementById('description').value = '';
+}
+
+// Fungsi untuk memformat tanggal
+function formatDate(date) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Intl.DateTimeFormat('en-US', options).format(date);
+}
+    </script>
+
 </body>
 
 </html>
